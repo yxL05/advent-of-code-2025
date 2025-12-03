@@ -1,4 +1,5 @@
-import { parseFile, positiveMod } from './utils.js'
+import { parseFile } from '../utils.js'
+import { positiveMod } from './utils.js'
 
 function getPassesByZero(rotations: string[]) {
   function parseRotation(rotation: string) {
