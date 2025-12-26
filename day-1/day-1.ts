@@ -1,4 +1,4 @@
-import { readLines } from '../utils.js'
+import { logSolution, readLines } from '../utils.js'
 
 // Helpers
 function parseRotation(rotation: string) {
@@ -67,4 +67,4 @@ function solveP2(rotations: string[]): number {
 const FILE_PATH = './day-1/input.txt'
 const output = solveP2(readLines(FILE_PATH))
 
-console.log(`File path: ${FILE_PATH}, output: ${output}`)
+logSolution(FILE_PATH, output)
