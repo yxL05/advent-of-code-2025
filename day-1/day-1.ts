@@ -1,17 +1,17 @@
 import { logSolution, readLines } from '../utils.js'
 
 // Helpers
-function parseRotation(rotation: string) {
+function parseRotation(rotation: string): number {
   const value = Number(rotation.slice(1))
 
   return rotation[0] === 'L' ? -value : value
 }
 
-function positiveMod(n: number, m: number) {
+function positiveMod(n: number, m: number): number {
   return ((n % m) + m) % m
 }
 
-function getPassesByZero(value: number, prev: number) {
+function getPassesByZero(value: number, prev: number): number {
   if (value === 0) {
     return 1
   }
